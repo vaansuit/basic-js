@@ -326,40 +326,40 @@ console.log(rmOutput); // 31 % 15 = 1
 // console.log(quotientOutput);
 // console.log(rmOutput);
 
-let d;
+// let d;
 
-d = new Date();
-console.log(d, typeof d); //That will output the date
+// d = new Date();
+// console.log(d, typeof d); //That will output the date
 
-d = d.toString(); 
-console.log(d, typeof d); //Will change the type from Object to string
+// d = d.toString(); 
+// console.log(d, typeof d); //Will change the type from Object to string
 
-d = new Date('2021-07-10T12:30:300');
-console.log(d, typeof d); //Will create a date with the parameters passed
+// d = new Date('2021-07-10T12:30:300');
+// console.log(d, typeof d); //Will create a date with the parameters passed
 
-d = Date('07/10/2021 12:30:00');
-console.log(d, typeof d); //Another way to create a date
+// d = Date('07/10/2021 12:30:00');
+// console.log(d, typeof d); //Another way to create a date
 
-d = Date('2022-07-10');
-console.log(d, typeof d); //Here we must be aware of one thing. It will display day 10 if we dont specifie our timezone
+// d = Date('2022-07-10');
+// console.log(d, typeof d); //Here we must be aware of one thing. It will display day 10 if we dont specifie our timezone
 
-d = Date('07/10/2021');
-console.log(d, typeof d); //Another way to create e data
+// d = Date('07/10/2021');
+// console.log(d, typeof d); //Another way to create e data
 
-d = Date.now();
-console.log(d, typeof d); //WIll show us the exact date that we are in milliseconds
+// d = Date.now();
+// console.log(d, typeof d); //WIll show us the exact date that we are in milliseconds
 
-d = new Date();
-d = d.getTime(); //Another way to get the exact date displayed in milliseconds
-console.log(d, typeof d);
+// d = new Date();
+// d = d.getTime(); //Another way to get the exact date displayed in milliseconds
+// console.log(d, typeof d);
 
-d = d.valueOf();
-console.log(d, typeof d); //Another way to get the exact date displayed in milliseconds
+// d = d.valueOf();
+// console.log(d, typeof d); //Another way to get the exact date displayed in milliseconds
 
-//We can also convert milliseconds in to a date
+// //We can also convert milliseconds in to a date
 
-d = new Date(1723819133035);
-console.log(d, typeof d); //That convert the milliseconds in to a Date format
+// d = new Date(1723819133035);
+// console.log(d, typeof d); //That convert the milliseconds in to a Date format
 
 
 

@@ -221,3 +221,28 @@ console.log(myNewString); // 'Developer'
 // const myNewString = myString[0].toUpperCase() + myString.substring(1);
 
 // console.log(myNewString);
+
+let x;
+
+const num  = 5;
+
+x = num.toString();
+console.log(x, typeof x); //Transform to the type string
+
+x = num.toString().length;
+console.log(x, typeof x); //Transform the number to string, so we can see the lenght
+
+x = num.toFixed(2);
+console.log(x, typeof x); //Shows now 2 numbers after comma, transforme the type from num to string
+
+x = num.toPrecision(3);
+console.log(x, typeof x); //Determines how many numbers it will show to us, the type mantain as number
+
+x = num.toExponential(2);
+console.log(x);
+
+x = num.toLocaleString('ar-AR');
+console.log(x, typeof x); //Transform the number to the informed language. The type change from Number to string
+
+x = num.valueOf();
+console.log(x, typeof x); //Returns the content of the variable

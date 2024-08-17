@@ -362,4 +362,160 @@ console.log(rmOutput); // 31 % 15 = 1
 // console.log(d, typeof d); //That convert the milliseconds in to a Date format
 
 
+//Working with the Date API Intl
+
+// let x;
+// let d = new Date();
+
+// const x1 = Intl.DateTimeFormat('pt-BR').format(d); 
+// console.log(x1); //The output will be the Date Time formatted to the parameter that we passed
+
+// const x2 = Intl.DateTimeFormat('default').format(d);
+// console.log(x2); //That will output the default format, using the browser info of the system
+
+// const x3 = Intl.DateTimeFormat('pt-BR', { month: 'short'}).format(d);
+// console.log(x3); //That will output the short name of the month in the pt-BR format. 
+
+// //There is a better way to call the Intl
+
+// x = d.toLocaleString('pt-BR');
+// console.log(x); //Does the same thing as x1
+
+// x = d.toLocaleString('pt-BR', {
+//     weekday: 'long',
+//     year: 'numeric',
+//     month: 'long',
+//     day: 'numeric',
+//     hour: 'numeric',
+//     minute: 'numeric',
+//     second: 'numeric',
+//     timeZone: 'America/Sao_Paulo',});
+
+// console.log(x);
+
+// let x; 
+
+// //Mostly common way to create Arrays. We call it lireals
+// const numbers = [1, 2, 3];
+// const fruits = ['apple', 'grape', 'strawberry'];
+
+//Uncommon way to create Arrays. We call it constructor
+
+// const mixed = new Array('apple', 13, 'watermellon');
+
+// x = numbers[0];
+// console.log(x); //Output the index 0 of the array, in this case number 1
+
+// x = numbers[1] + numbers[2];
+// console.log(x); //Outputs the sum of the numbers indicated in the index position
+
+// x = `My favorite fruit is ${fruits[1]}`;
+// console.log(x); //Outputs the fruit in the index 1, grape in this case
+
+// x= numbers.length;
+// console.log(x); //Outputs the lenght of the array
+
+// fruits[0] = 'soda'; //Replace the value of the index mentioned
+
+// // fruits.length = 2; //We can set the length of the array
+
+// fruits[fruits.length] = 'new value'; //A way to add a new value in to the end of the array
+
+// x = fruits;
+
+// console.log(x);
+
+// let x;
+
+//  const array = [0, 1, 2, 3, 4, 'peach'] // Literal
+//  const arrayConstructor = new Array(1, 2, 3, 4, 5); //constructor
+
+//  x = array.push();
+//  console.log(x); //With no parameters, it returns the lenght of the array
+
+//  x = array.push(5);
+//  console.log(x, array); //Insert the element in the end of the array. You can insert multiple values separated by a , .
+
+//  x = array.pop();
+//  console.log(x, array); //Removes the last element of the array
+
+//  x = array.unshift(2);
+//  console.log(x, array); //Inserts an element in the index 0 of the array.
+
+//  x = array.shift();
+//  console.log(x, array); //Removes the element in the index 0 of the array. 
+
+
+//  x = array.reverse();
+//  console.log(x);
+
+//  x = array.includes(2);
+//  console.log(x); //Returns a true or false statement. It checks if the element exist in the array
+
+//  x = array.indexOf();
+//  console.log(x); //Indicates the index of the element. If the element doesnt exist or is informed, the return will be -1.
+
+//  x = array.slice(1, 4);
+//  console.log(x, array); //Will output the elements of the array starting in the first index passed, in this case 1 and finishing after the last index passed, in this case 3. That does not modify the array structure. 
+
+//  x = array.splice(1, 2);
+//  console.log(x, array); //In this case, x will be an array with the index 1, 2. And now our original Array was modified, having now only 0, 3, 4.
+
+// /**
+//  * If splice() receives index that does not exist in the array. It will create an empty array.
+//  * If splice() receives anything after the second index, it will be added in the last index of the original array
+//  * If splice() receives any string as parameter, it will take all the elements of the original array and passing through the new array, leaving the original empty
+//  * 
+//  */
+
+//  x = array.splice(1, 2).reverse();
+//  console.log(x, array); //We can use multiples arrays methods combined
+
+// let x;  
+
+// const agiHero = ['magina', 'phanton lancer', 'phanton assassin'];
+// const intHero = ['invoker', 'lina', 'lion'];
+
+// agiHero.push(intHero);
+// console.log(agiHero); // Now the agiHero array has the intHero array inside of it. 
+
+// x = agiHero[3][2];
+// console.log(x); //Will display  lion. It takes the index that the array is and than take the element of. We can do that infinitelly
+
+// const allHeroes = [agiHero, intHero];
+// console.log(allHeroes); //That will create an array with the 2 arrays inside of it. 
+
+// x = allHeroes[1][0];
+// console.log(x); //The output will be the array that is in the index 1, taking the element of that array that is in the index 0. In this case will return invoker.
+
+// x = agiHero.concat(intHero);
+// console.log(x, agiHero); //That will create an new Array with all the elements of the arrays indicated. It wont change the content of the originals arrays, in this case intHero and agiHero.
+
+// //Spread Operator(...)
+
+// x= [...agiHero, ...intHero];
+// console.log(x); //Does the same thing as .concat. Is used more often
+
+// //Flatten Arrays
+
+// const arr = [1, 2, [3, 4], 5, 6, [7, 8], 9, 10];
+// x = arr.flat();
+// console.log(x); //It will output an single array with all elements
+
+// //Static Methods on Array Object
+
+// x = Array.isArray('Hello');
+// console.log(x); //WIll return a boolean statement, in this case false, because 'Hello' is not an array.
+
+// x = Array.from('Hello World');
+// console.log(x); //WIll create an array for each element space inside the string, including the blank ones. 
+
+// const a = 1;
+// const b = 2;
+// const c = 3;
+
+// x = Array.of(a, b, c);
+// console.log(x); //Will create an Array and the elements will be the content of the variables. 
+
+
 

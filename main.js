@@ -795,52 +795,52 @@ Turn the library object into a JSON string. There is a specific function that we
  */
 
 
-const library = [ 
-    { 
-    title: 'title 1',
-    author: 'author 1',
-    status: {
-        own: true,
-        reading: false,
-        read: false, 
+// const library = [ 
+//     { 
+//     title: 'title 1',
+//     author: 'author 1',
+//     status: {
+//         own: true,
+//         reading: false,
+//         read: false, 
 
-    },
-},
-    { 
-    title: 'title 2',
-    author: 'author 2',
-    status: {
-        own: true,
-        reading: false,
-        read: false, 
+//     },
+// },
+//     { 
+//     title: 'title 2',
+//     author: 'author 2',
+//     status: {
+//         own: true,
+//         reading: false,
+//         read: false, 
 
-    },
-},
-    { 
-    title: 'title 3',
-    author: 'author 3',
-    status: {
-        own: true,
-        reading: false,
-        read: false, 
+//     },
+// },
+//     { 
+//     title: 'title 3',
+//     author: 'author 3',
+//     status: {
+//         own: true,
+//         reading: false,
+//         read: false, 
 
-    },
-},
-];
-//first step
-library[0].status.read = true;
-library[1].status.read = true;
-library[2].status.read = true;
+//     },
+// },
+// ];
+// //first step
+// library[0].status.read = true;
+// library[1].status.read = true;
+// library[2].status.read = true;
 
-console.log(library);
+// console.log(library);
 
-//second step
-const { title: firstBook } = library[0];
-console.log(firstBook);
+// //second step
+// const { title: firstBook } = library[0];
+// console.log(firstBook);
 
-//third step
-const x = JSON.stringify(library)
-console.log(x);
+// //third step
+// const x = JSON.stringify(library)
+// console.log(x);
 
 
 

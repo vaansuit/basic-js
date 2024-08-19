@@ -573,3 +573,274 @@ console.log(arr3);
 // const arr3 = [...arr1, ...arr2];
 
 // console.log(arr3);
+
+// let x;
+
+// const hero = {
+//     heroName: 'Invoker',
+//     stats: {
+//         baseAttack: 40,
+//         baseMana: 150,
+//         baseHealth: 450,
+//     },
+//     categories: ['mage', 'initiator', 'nuke'],
+
+// }; //That way we create an object
+
+// const newHero = new Object(
+//     {
+//         heroName: 'Magina',
+//     stats: {
+//         baseAttack: 80,
+//         baseMana: 100,
+//         baseHealth: 350,
+//     },
+//     categories: ['carry', 'farmer', 'pusher'],
+//     }
+// ); //Another way to create an object
+
+// console.log(hero);
+// console.log(newHero);
+
+// x = hero.heroName;
+// console.log(x); //Call the value of the key heroName
+
+// x = hero['heroName'];
+// console.log(x); //Another way to call the value of a key. We use more often the first way
+
+// x = hero.stats.baseAttack;
+// console.log(x) //We can acces nested objects
+
+// x = hero.categories;
+// console.log(x); //Shows all the elements of the array
+
+// x = hero.categories[0];
+// console.log(x) // Sow the element of the index 0
+
+// // hero.heroName = 'Lion';
+// // console.log(hero); //That way, we changed the heroName key value of our object hero from Invoker to Lion
+
+// delete hero.categories;
+// console.log(hero); //We can delete keys from our object
+
+// hero.categories = ['mage', 'initiator', 'nuke'];
+// console.log(hero); //We can create new keys and values and add it to our object
+
+// hero.attackPhrase = function () {
+//     x = this.heroName;
+//     console.log(`${x}: Ignorance is a bliss.`); //We can acces the key values of our oun Object in functions using 'this.'.
+// };
+
+// x = hero.attackPhrase();
+// console.log(x); //We can have functions in our key values of an object, and we can call it too.
+
+// const badPractice = {
+//     'first name': 'Jhon Wick'
+// };
+
+// x = badPractice["first name"];
+// console.log(x) //Wen ca use spaces in our key names, but it is a bad practice. But, to acces it we use [''] and than we are fine.
+
+// const obj1 = {a: 0, b: 1};
+// const obj2 = {c: 2, d: 3};
+// const obj3 = {e: 4, f: 5};
+
+// const todo = {
+//     id: 0, 
+//     task: 'Feed dogos',
+//     isComplete: false,
+//     example: {
+//         test: 'Empty',
+//         test2: {
+//             a: 1,
+//             b: 2,
+//         }
+//     }
+// };
+
+// const todos = [
+//     {
+//         id: 0, 
+//         task: 'Feed dogos',
+//        isComplete: false,
+//     },
+//     {
+//         id: 1, 
+//         task: 'Feed fishos',
+//        isComplete: true,
+//     },
+//     {
+//         id: 2, 
+//         task: 'Feed catus',
+//        isComplete: false,
+//     },
+// ]
+
+// let x;
+
+// x = todo.example.test2.a;
+// console.log(x); //Example of nesting objects
+
+// x = {...obj1, ...obj2, ...obj3};
+// console.log(x); //Use of Spread Operator. It takes the objects and turn it into one only object
+
+// x = {obj1, obj2};
+// console.log(x); //Turns an Object with 2 Objects inside
+
+// x = {...obj1, obj2};
+// console.log(x); //Turns an Object with the keys and values of obj1, and an object obj2.
+
+// x = Object.assign({}, obj1, obj2, obj3);
+// console.log(x); // DOes the same thing as Spread Operator does. The first parameters is an empty object, and all the others are it contents.
+
+// x = todos[0];
+// console.log(x); //When we have an array of objects, we can use the properties and methods that exists in an Array. Here we are accesing the values of index 0 of the array todos
+
+// x = Object.keys(todo);
+// console.log(x); //Here we can see all the keys that the object has
+
+// x = Object.keys(todo).length;
+// console.log(x); //Here we can see the lenght of our object
+
+// x = Object.values(todo);
+// console.log(x); // Here we can see the values of our keys
+
+// x = Object.entries(todos);
+// console.log(x); //That shows the keys and the values that it has of our object
+
+// x = Object.hasOwnProperty('aloha');
+// console.log(x); //It going to return a boolean statement, checking if it has the key that is passed in the parameter, in this case the return is false
+
+// const firstName = 'Jhon';
+// const secondName = 'Wick';
+// const damage = 1000;
+
+// const character1 = {
+//     firstName: firstName,
+//     secondName: secondName,
+//     damage: damage,
+// };
+
+// console.log(character1); //Outputs the object created, we can assign a key value from an variable. If the key name is the same as the variable, we can do another way.
+
+// const character2 = {
+//     firstName,
+//     secondName,
+//     damage,
+// };
+
+// console.log(character2); //When the key name and the variable name are equals, we do not need to repeat yourself.
+
+// //Destructurng Objects and Array
+
+// const todo = {
+//     id: 1, 
+//     text: 'Feed dogo',
+//     isCOmplete: false,
+//     user: {
+//         name: 'Jhon',
+//     }
+// };
+
+// const id1 = todo.id;
+// console.log(id1); //This assigned the id key value of our todo object to the variable id that we create
+
+// // const { id } = todo;
+// // console.log(id); //Does the same thing as above, we use that more often, thats called destructuring 
+
+// // const {id, user: {name}} = todo;
+// // console.log(name); //We can acces all the objects that are inside of our first object
+
+// // const {
+// //     id: todoId,
+// //     text,
+// //     user: { name },
+// // } = todo;
+
+// // console.log(todoId); //Does the same thing as the above 
+
+// //Destructuring Arrays
+
+// const numbers  = [1, 2, 3, 4];
+// const [ffirst, ssecond, tthird, ffourth] = numbers;
+// const [first, second, ...asd] = numbers;
+
+// console.log(first);
+// console.log(ffirst, ssecond, tthird, ffourth);
+// console.log(first, second, asd); //That way we destructure arrays. The Spread Operator takes the rest of the array and put that into an new array.
+
+
+/**
+ * 
+ * OBJECT CHALLANGE
+ * 
+ * # Object Challenge
+
+### Step 1
+
+Create an array of objects called `library`. Add 3 objects with a property of `title`, `author`, `status`. Title and author should be strings (whatever value you want) and status should be another object with the properties of `own`, `reading` and `read`. Which should all be boolean values. For all status, set `own` to `true` and `reading` and `read` to false.
+
+### Step 2
+
+You finished reading all of the books. Set the `read` value for all of them to `true`. Do not edit the initial object. Set the values using dot notation.
+
+### Step 3
+
+Destructure the title from the first book and rename the variable to `firstBook`
+
+### Step 4
+
+Turn the library object into a JSON string. There is a specific function that we looked at in the last section that we can use to do this.
+
+ */
+
+
+const library = [ 
+    { 
+    title: 'title 1',
+    author: 'author 1',
+    status: {
+        own: true,
+        reading: false,
+        read: false, 
+
+    },
+},
+    { 
+    title: 'title 2',
+    author: 'author 2',
+    status: {
+        own: true,
+        reading: false,
+        read: false, 
+
+    },
+},
+    { 
+    title: 'title 3',
+    author: 'author 3',
+    status: {
+        own: true,
+        reading: false,
+        read: false, 
+
+    },
+},
+];
+//first step
+library[0].status.read = true;
+library[1].status.read = true;
+library[2].status.read = true;
+
+console.log(library);
+
+//second step
+const { title: firstBook } = library[0];
+console.log(firstBook);
+
+//third step
+const x = JSON.stringify(library)
+console.log(x);
+
+
+

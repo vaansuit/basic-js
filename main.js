@@ -842,5 +842,142 @@ Turn the library object into a JSON string. There is a specific function that we
 // const x = JSON.stringify(library)
 // console.log(x);
 
+// function noParameters() {
+//     console.log('Hello World');
+// };
+
+// noParameters();
+
+// function sumNum(n1, n2) {
+//     console.log(n1 + n2);
+// }
+
+// sumNum(1, 2);
+
+// function subNum(n1, n2) {
+//     return n1 - n2;
+
+//     console.log(result); //this is dead code, wont be executed because it is below the return. 
+// }
+
+// subNum(10, 5); //This wont display anything, we need to console.log it or put the result in a variable and then console.log it
+
+// console.log(subNum(10, 5));
+
+// const subR = subNum(20, 10);
+
+// console.log(subR);
+
+// //Here, we are passing a default value to our parameter user
+// function registerUser(user = 'Default') {
+//     return `The user ${user} is registrated.`;
+// }
+
+// console.log(registerUser());
+// console.log(registerUser('Mark'));
+
+// //
+
+// //Using array as parameter and randomizing a value
+// function randomArrayValues(array) {
+//     random = Math.floor(Math.random() * array.length);
+//     result = array[random];
+//     return result;
+// };
+
+// const array = ['OKy', 'DOky', 1, 3, 4];
+
+// console.log(randomArrayValues(array));
+
+// //We can do the same thing but in another way
+
+// function newRandomArray(...array) {
+//     random = Math.floor(Math.random() * array.length);
+//     result = array[random];
+//     return result;
+// }
+
+// console.log(newRandomArray(1, 'dois', 3, 'quatro')); //That will work because the spread operator will turn anything that we pass as a parameter in to an array
+
+// //We can also pass objects as parameters in functions
+
+// function getObjectKeyValue(user) {
+//     return `The user.name is ${user.name} and the id is ${user.id}`
+// };
+
+// const user = {
+//     id: 1, 
+//     name: 'Jhon'
+// }
+
+// console.log(getObjectKeyValue(user)); //Output the values of the const user
+
+// console.log(getObjectKeyValue({
+//     id: 2, 
+//     name: 'Karen',
+// })); //We can pass the values of our object that way too
+
+// const weCanCallItAnythingWeWish = {
+//     id: 3,
+//     name: 'Does not matter'
+// };
+
+// console.log(getObjectKeyValue(weCanCallItAnythingWeWish)); //Does not matter the name of your object, dont need to be the same as the parameter of our function
+
+//  x = 10; //Global Scope
+
+// function sum(num1) {
+// 	x = 30;
+// 	return x + num1;
+// }
+
+// console.log(sum(x));
+
+//Nested Functions
+
+// function first() {
+//     const x = 100;
+
+//     function second() {
+//         y = 100;
+//         // console.log(x); //We can acces the value of our parents variables
+//         return console.log(x + y);
+//     }
+//     // console.log(y); //Will output an error, we cant acces the variables of our children functions
+//     second(); //We have to call our children function 
+// }
+
+// first();
+
+// //Same thing with blocks of logic
+// if (true) {
+//     x = 100;
+    
+//     if (x === 10) {
+//         y = 100;
+//         // console.log(x);//We can acces our parents variable values
+//         console.log(x + y);
+//     }
+
+//     // console.log(y); //Will output an error because we can acces the variable values of our childrens
+  
+// }
+
+//Function Declaration 
+
+console.log(funcDec(200)); // That will run with no errors, because when we declare a function, meaning that we can call it whenever we want.
+
+function funcDec(number) {
+	return '+' + number;
+}
 
 
+//Function Expression 
+
+// console.log(functionExp(200)); //Outputs an error, because the variable must be initialized before we call it. Here we are calling it before our function execute, thats why the error. 
+
+var functionExp = function(number) {
+	return '-' + number;
+};
+
+console.log(functionExp(200));

@@ -963,21 +963,21 @@ Turn the library object into a JSON string. There is a specific function that we
   
 // }
 
-//Function Declaration 
+// //Function Declaration 
 
-console.log(funcDec(200)); // That will run with no errors, because when we declare a function, meaning that we can call it whenever we want.
+// console.log(funcDec(200)); // That will run with no errors, because when we declare a function, meaning that we can call it whenever we want.
 
-function funcDec(number) {
-	return '+' + number;
-}
+// function funcDec(number) {
+// 	return '+' + number;
+// }
 
 
-//Function Expression 
+// //Function Expression 
 
-// console.log(functionExp(200)); //Outputs an error, because the variable must be initialized before we call it. Here we are calling it before our function execute, thats why the error. 
+// // console.log(functionExp(200)); //Outputs an error, because the variable must be initialized before we call it. Here we are calling it before our function execute, thats why the error. 
 
-var functionExp = function(number) {
-	return '-' + number;
-};
+// var functionExp = function(number) {
+// 	return '-' + number;
+// };
 
-console.log(functionExp(200));
+// console.log(functionExp(200));

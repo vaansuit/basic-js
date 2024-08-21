@@ -984,41 +984,41 @@ Turn the library object into a JSON string. There is a specific function that we
 
 //Arrow functions
 
-const add = (a, b) => {
-	return a + b;
-};
+// const add = (a, b) => {
+// 	return a + b;
+// };
 
-console.log(add(1, 2)); //Output as expected, will be 3
+// console.log(add(1, 2)); //Output as expected, will be 3
 
-//Implicit return
+// //Implicit return
 
-const sub = (a, b) => a - b;
+// const sub = (a, b) => a - b;
 
-console.log(sub(3, 1)); //Output will be 2
+// console.log(sub(3, 1)); //Output will be 2
 
-//We can also leave the () if we have only one parameter
+// //We can also leave the () if we have only one parameter
 
-const mult = a => a * 2;
+// const mult = a => a * 2;
 
-console.log(mult(2)); //Output will be 4
+// console.log(mult(2)); //Output will be 4
 
-//If we want to return an object, we put our arrow function inside a ()
+// //If we want to return an object, we put our arrow function inside a ()
 
-const objFunc = () => ({
-	id: 1, 
-	name: 'John',
-});
+// const objFunc = () => ({
+// 	id: 1, 
+// 	name: 'John',
+// });
 
-console.log(objFunc());
+// console.log(objFunc());
 
-//Using arrow function in a callback. Callback is a function executing after another function
+// //Using arrow function in a callback. Callback is a function executing after another function
 
-numbers = [1, 2, 3, 4];
+// numbers = [1, 2, 3, 4];
 
-numbers.forEach((n) => console.log(n));
+// numbers.forEach((n) => console.log(n));
 
-//or
+// //or
 
-numbers.forEach(function (n) {
-	console.log(n);
-});
+// numbers.forEach(function (n) {
+// 	console.log(n);
+// });

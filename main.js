@@ -1153,3 +1153,59 @@ For bonus points, write it as a one line arrow functiona
 //     const a = 10 * 5;
 //     console.log(`The area of a rectangle with a length of ${rl} and a width of ${rw} is ${a}`);
 // })();
+
+//If statement
+
+const x = 1;
+const y = 2;
+
+if (x >= y) {
+    console.log(x);
+}; //If this statement (x >=y ) is true, i will console.log the value of x
+
+//If else
+
+if (x === y) {
+    console.log(`x is equal to y`);
+} else {
+    console.log('x is not equal to y');
+};
+
+//Shorthand if, not recommendated but possible
+
+if (x < y) console.log('Short hand, x is less than y')
+
+//we can use else in that way
+
+if (x > y) console.log('x is greater than y'); 
+    else console.log ('x is not greater than y'); 
+
+//Switch statements 
+
+const d = new Date(2022, 1, 10, 19, 0, 0);
+const month = d.getMonth();
+const hours = d.getHours();
+
+console.log(month);
+
+switch (month) {
+    case 1:
+        console.log('It is January');
+        break;
+    case 2:
+        console.log('It is February');
+        break;
+    default:
+        console.log('Months does not exist, you are just allucinating');
+
+};
+
+switch (true) {
+    case hours < 12:
+        console.log('Good Morning');
+        break;
+
+    case hours > 12:
+        console.log('Good Night');
+        break;
+}

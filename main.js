@@ -1154,7 +1154,7 @@ For bonus points, write it as a one line arrow functiona
 //     console.log(`The area of a rectangle with a length of ${rl} and a width of ${rw} is ${a}`);
 // })();
 
-//If statement
+// //If statement
 
 // const x = 1;
 // const y = 2;
@@ -1209,3 +1209,55 @@ For bonus points, write it as a one line arrow functiona
 //         console.log('Good Night');
 //         break;
 // }
+
+// /**
+//  * 
+//  * # Calculator Challenge
+
+// Now that you know how to write functions and use control structures like if statements and switches, let's try to write a simple calculator.
+
+// **Instructions:**
+
+// Create a function called `calculator` that takes three parameters: `num1`, `num2` and `operator`. The operator can be `+`, `-`, `*` or `/`. The function should return the result of the calculation. If anything other than the four operators is passed in, the function should return an error message.
+
+// **Example:**
+
+// ```
+// calculator(5, 2, '+') // returns 7
+// calculator(5, 2, '-') // returns 3
+// calculator(5, 2, '*') // returns 10
+// calculator(5, 2, '/') // returns 2.5
+// calculator(5, 2, '%') // returns an error message
+// ```
+
+// **Hint:**
+
+// - You can use an if statement to the operator, but this is a good example for using a switch statement.
+//  */
+
+// function calculator(n1, n2, op) {
+
+//     switch(op) {
+//         case '+':
+//             console.log(`The sum is ${n1 + n2}`);
+//             break;
+//         case '-':
+//             console.log(`The sub is ${n1 - n2}`);
+//             break;
+//         case '*':
+//             console.log(`The mult is ${n1 * n2}`);
+//             break;
+//         case '/':
+//             console.log(`The div is ${n1 / n2}`);
+//             break;
+//         default:
+//             console.log('Error, the operator is different than +, -, *, /');
+//             break;
+//     };
+// };
+
+// calculator(10, 10, '+');
+// calculator(10, 10, '-');
+// calculator(10, 10, '*');
+// calculator(10, 10, '/');
+// calculator(10, 10, '%');

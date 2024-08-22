@@ -1076,24 +1076,6 @@ console.log(minMax([1, 2, 3, 4, 5]));
 1.  You can use `Math.min()` and `Math.max()` to get the min and max of a list of numbers.
 2.  You can use the Spread `...` operator to spread the values of an array into separate arguments.
 
-<details>
-  <summary>Click For Solution</summary>
-  
-```JavaScript
-function minMax(arr) {
-  const min = Math.min(...arr);
-  const max = Math.max(...arr);
-
-return {
-min,
-max,
-};
-}
-
-console.log(minMax([55, 32, 43, 54, 65, 76, 87, 98, 109]));
-// { min: 32, max: 109 }
-
-````
 
 </details>
 
@@ -1115,21 +1097,6 @@ The area of a rectangle with a length of 10 and a width of 5 is 50.
 2.  You do not have to return anything from this function, just log to the console.
 
 <details>
-  <summary>Click For Solution</summary>
-  
-  ```JavaScript
-((length, width) => {
-const area = length * width;
-
-const output = `The area of a rectangle with a length of ${length} and a width of ${width} is ${area}.`;
-
-console.log(output);
-})(10, 5);
-
-```
-</details>
-
-```
 
 */
 
@@ -1140,49 +1107,49 @@ console.log(output);
 For bonus points, write it as a one line arrow functiona
  */
 
-const getCelsius = f => (f - 32) * 5/9;
+// const getCelsius = f => (f - 32) * 5/9;
 
-console.log(getCelsius(32));
+// console.log(getCelsius(32));
 
-console.log()
+// console.log()
 
-//Function Challenge 2 
+// //Function Challenge 2 
 
-/**
- * Create an arrow function called `minMax()` 
- * that takes in an array of numbers and returns an object with the minimum and maximum numbers in the array.
- */
+// /**
+//  * Create an arrow function called `minMax()` 
+//  * that takes in an array of numbers and returns an object with the minimum and maximum numbers in the array.
+//  */
 
-const array = [0, 1, 23, 3, 21];
+// const array = [0, 1, 23, 3, 21];
 
-const minMax = (arr) => {
+// const minMax = (arr) => {
     
-const min = Math.min(...arr);
-const max = Math.max(...arr);
+// const min = Math.min(...arr);
+// const max = Math.max(...arr);
 
-return {
-    min,
-    max,
-};
-};
+// return {
+//     min,
+//     max,
+// };
+// };
 
-console.log(minMax(array));
+// console.log(minMax(array));
 
-//Third Challenge
+// //Third Challenge
 
-/**
- * Create an IIFE (Immediately Invoked Function Expression) that takes in the length and width of a rectangle outputs it to the console in a message as soon as the page loads.
+// /**
+//  * Create an IIFE (Immediately Invoked Function Expression) that takes in the length and width of a rectangle outputs it to the console in a message as soon as the page loads.
 
-**Expected Result:**
+// **Expected Result:**
 
-```JavaScript
-// On page load
-The area of a rectangle with a length of 10 and a width of 5 is 50.
- */
+// ```JavaScript
+// // On page load
+// The area of a rectangle with a length of 10 and a width of 5 is 50.
+//  */
 
-(function(){
-    const rl = 10
-    const rw = 5;
-    const a = 10 * 5;
-    console.log(`The area of a rectangle with a length of ${rl} and a width of ${rw} is ${a}`);
-})();
+// (function(){
+//     const rl = 10
+//     const rw = 5;
+//     const a = 10 * 5;
+//     console.log(`The area of a rectangle with a length of ${rl} and a width of ${rw} is ${a}`);
+// })();

@@ -1265,3 +1265,91 @@ For bonus points, write it as a one line arrow functiona
 /**
  * 
  */
+
+// const children = 0;
+
+// //That way, if we have 0 childrens the logic will be false because
+// //0 is false. We can correct that
+// if(children) {
+//     console.log(`You have ${children} childrens!`);
+// } else {
+//     console.log(`Please inform the number of childres!`);
+// }
+
+
+// if (children !== undefined) {
+//     console.log(`You have ${children} childrens!`);
+// } else {
+//     console.log(`Please inform the number of childres!`);
+// }
+
+// //or
+
+// if (!isNaN(children)) {
+//     console.log(`You have ${children} childrens!`);
+// } else {
+//     console.log(`Please inform the number of childres!`);
+// }
+
+// //WHen you want to check empty arrays
+
+// const posts = [];
+
+// if (posts.length > 0) {
+//     console.log('List posts');
+// } else {
+//     console.log('No posts avaliable');
+// }
+
+// //When want to check empty objects
+
+// const user = {};
+
+// if(Object.keys(user).length > 0) {
+//     console.log('List user');
+// } else {
+//     console.log('There is no users')
+// }
+
+// //Use triple = always to comparison
+
+// let b;
+
+// b = 10 || 20;
+// console.log(b) //Will return 10, because is the first truty value
+
+// b = 0 || 20;
+// console.log(b) //Will return 20, because is the first truty value, considering 0 is always false
+
+// b = 0 || false || undefined;
+// console.log(b)//Will return undefined, because if there is no truty values, it returns the last value
+
+// let c;
+
+// c = 10 ?? 20;
+// console.log(c)//WIll output 10, because the left operand is not null or undefined
+
+// c = null ?? 20;
+// console.log(c); //Will output 20, because the left operand is null
+
+//Ternary Operator
+
+// const age = 18;
+
+// if (age >= 18) {
+//     console.log('You can drink')
+// } else {
+//     console.log('You can drink, it is just not legal');
+// }
+
+// // using ternary
+
+// age >= 18 ? console.log('You can drink') : console.log('You can drink, it is just not legal');
+
+// // using ternary in a string 
+
+// const canDrink = age >= 18 ? true : false;
+// const canDrink2 = age >= 18 ? 'You can drink bigboy' : 'Better not';
+
+
+
